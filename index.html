@@ -1,0 +1,32 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@400;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Generate a <span>random password</span></h1>
+            <p>Never use an insecure password again.</p>
+            <input type="number" min="5" max="15" id="input-length" placeholder="Set password length" />
+            <button id="btn-pass" class="btn-generate">Generate passwords</button><br>
+            <span class="span-tip">Type a number between 5 and 15</span>
+            <div class="container-passwords">
+                <div>
+                    <div class="row-pass">
+                        <h3 id="pass-one"></h3>
+                        <img id="img-copy-one" src="copy.png" />
+                    </div>
+                    <p id="copy-one"></p>
+                </div>
+                <div>
+                    <div class="row-pass">
+                        <h3 id="pass-two"></h3>
+                        <img id="img-copy-two" src="copy.png" />
+                    </div>
+                    <p id="copy-two"></p>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
